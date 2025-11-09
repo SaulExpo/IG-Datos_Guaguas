@@ -5,7 +5,19 @@ Las guaguas se muestran desplazándose según la **hora simulada**, y el usuario
 
 ---
 
-## Estructura del Proyecto)
+## Contenidos
+
+[Estructura del Proyecto](#estructura-del-proyecto)  
+
+[Obtención de datos](#obtención-de-datos)
+
+[Funcionalidades del sistema](#funcionalidades-del-sistema)  
+
+[Vídeo de demostración](#vídeo-de-demostración)  
+
+---
+
+## Estructura del Proyecto
 
 | Archivo | Descripción |
 |--------|-------------|
@@ -36,7 +48,7 @@ Los archivos obtenidos son los siguientes:
 
 ### Mapa de Las Palmas
 
-Para obtener el mapa la web OpenStreetMap, estabeciéndo las siguientes coordenadas:
+Para obtener el mapa la web OpenStreetMap, estableciendo las siguientes coordenadas:
 ```
 minlon = -15.49072265625,
 maxlon = -15.3973388671875,
@@ -83,7 +95,7 @@ out body;
 out skel qt;
 ```
 
-Y la siguiente para las calles iluminadas sobre las que se crearan las farolas:
+Y la siguiente para las calles iluminadas sobre las que se crearán las farolas:
 ```
 [out:json][timeout:25];
 area["name"="Las Palmas de Gran Canaria"]["boundary"="administrative"]["admin_level"="8"]->.searchArea;
@@ -213,7 +225,7 @@ Se puede:
 
 Esto afecta inmediatamente qué guaguas están en servicio y su posición.
 
-#### Ciclo dia y noche
+#### Ciclo día y noche
 
 La iluminación de la escena cambia automáticamente:
 
@@ -224,7 +236,7 @@ La iluminación de la escena cambia automáticamente:
 
 ![chrome_Ckzo18GO59](https://github.com/user-attachments/assets/6a61b3ea-dd9a-447f-be41-aa4fb914d3c6)
 
-#### Modificación de dia
+#### Modificación de día
 
 La información del archivo calendar.txt permite activar horarios:
 
@@ -233,7 +245,7 @@ La información del archivo calendar.txt permite activar horarios:
 - Domingos / festivos
 - etc.
 
-Esto modifica los viajes disponibles al seleccionar el dia requerido.
+Esto modifica los viajes disponibles al seleccionar el día requerido.
 
 ![chrome_tZGvHoFvoW](https://github.com/user-attachments/assets/5ead0975-b671-43f8-8f02-2efc013b2ed8)
 
@@ -259,3 +271,7 @@ Cada farola es una pequeña fuente de luz puntual, contribuyendo al efecto noctu
 
 ## Vídeo de demostración
 https://drive.google.com/file/d/1GU_o4la9AiDyhem4WYfbpPd6MjiifOWn/view?usp=sharing
+
+---
+
+Saúl Expósito Morales
