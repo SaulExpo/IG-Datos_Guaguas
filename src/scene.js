@@ -7,6 +7,7 @@ import { activos, segundosSimulados } from "./tiempo.js";
 import { crearBusMesh, setModeloGuagua } from "./buses.js";
 import { gruposParadas, mostrarTodasLasLineas } from "./paradas.js";
 import * as topojson from "topojson-client";
+import { MOUSE } from "three";
 
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
@@ -83,6 +84,7 @@ export function initScene() {
   camcontrols.enableRotate = false;
   camcontrols.enablePan = true;
   camcontrols.enableZoom = true;
+  camcontrols.mouseButtons.LEFT = MOUSE.PAN;
 
   window.addEventListener("resize", () => {
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -294,3 +296,4 @@ export function enfocarParada(paradaPos) {
 
   anim();
 }
+
